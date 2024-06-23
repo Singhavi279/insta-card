@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentIndex = 0;
 
         function updateCarousel() {
-            const offset = -currentIndex * 100;
+            const offset = -currentIndex * 100 / images.length; // Adjust for the number of images
             inner.style.transform = `translateX(${offset}%)`;
         }
 
@@ -24,5 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             updateCarousel();
         });
+
+        // Initialize carousel position
+        updateCarousel();
     });
 });
