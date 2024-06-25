@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,104 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Society Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      background-color: #24292e;
-      color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-      margin: 0;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-    }
-
-    .logo {
-      height: 60px;
-      margin-right: 1rem;
-    }
-
-    .society-name {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .social-icon {
-      color: #fff;
-      font-size: 1.5rem;
-    }
-
-    .carousels {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .carousel {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    .carousel-inner {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-
-    .carousel img {
-      width: 100%;
-      height: auto;
-      flex-shrink: 0; /* Prevent images from shrinking */
-    }
-
-    .carousel:hover img {
-      transform: scale(1.1);
-    }
-
-    .carousel-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0 1rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .carousel:hover .carousel-nav {
-      opacity: 1;
-    }
-
-    .carousel-nav button {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
   <div class="container">
@@ -121,9 +23,9 @@
     <br>
 
     <div class="button-container"> 
-  <button class="button">Button 1</button>
-  <button class="button">Button 2</button>
-  <button class="button">Button 3</button>
+      <button class="button">Button 1</button>
+      <button class="button">Button 2</button>
+      <button class="button">Button 3</button>
     </div>
     
     <div class="carousels">
@@ -160,105 +62,8 @@
           <button class="next">&#10095;</button>
         </div>
       </div>
-
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </div>
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </div>
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </div>
-
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-          <img src="https://images.pexels.com/photos/5323850/pexels-photo-5323850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </div>
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-          <img src="https://images.pexels.com/photos/4170628/pexels-photo-4170628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 2">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </div>
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-          <img src="https://images.pexels.com/photos/15352967/pexels-photo-15352967/free-photo-of-a-lamp-with-circles-on-it-is-sitting-on-a-bed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-        </div>
-        <div class="carousel-nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
       </div>
     </div>
-  </div>
-
-  <script>
-    const carousels = document.querySelectorAll('.carousel');
-
-    carousels.forEach(carousel => {
-      let inner = carousel.querySelector('.carousel-inner');
-      let images = carousel.querySelectorAll('img');
-      let currentImage = 0;
-
-      const prevBtn = carousel.querySelector('.prev');
-      const nextBtn = carousel.querySelector('.next');
-
-      prevBtn.addEventListener('click', () => {
-        currentImage = (currentImage - 1 + images.length) % images.length;
-        updateCarousel();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        currentImage = (currentImage + 1) % images.length;
-        updateCarousel();
-      });
-
-      function updateCarousel() {
-        const translateX = -currentImage * images[0].offsetWidth;
-        inner.style.transform = `translateX(${translateX}px)`;
-      }
-
-      updateCarousel();
-    });
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
