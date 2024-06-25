@@ -1,9 +1,7 @@
 body {
-  background-color: #24292e;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #24292E; /* Primary Color */
+  color: #FFFFFF; /* White */
+  font-family: 'JetBrains Mono', monospace; /* Primary font */
   margin: 0;
 }
 
@@ -28,8 +26,9 @@ body {
 }
 
 .society-name {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2rem; /* H1 */
+  font-weight: 700; /* Bold */
+  font-family: 'Open Sans', sans-serif; /* Secondary font */
 }
 
 .social-icons {
@@ -39,7 +38,7 @@ body {
 }
 
 .social-icon {
-  color: #fff;
+  color: #FFFFFF; /* White */
   font-size: 1.5rem;
 }
 
@@ -87,8 +86,8 @@ body {
 }
 
 .carousel-nav button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark gray with transparency */
+  color: #FFFFFF; /* White */
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 50%;
